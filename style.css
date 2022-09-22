@@ -6,7 +6,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Overpass', sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--neutral-light-gray);
   --primary-orange: hsl(25, 97%, 53%);
   --neutral-white: hsl(0, 0%, 100%);
@@ -18,7 +18,7 @@ html {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.6rem;
     color: var(--neutral-white);
 }
 
@@ -42,9 +42,12 @@ p {
 
 .thankyou-container,
 .rating-prompt-container {
+    display: flex;
+    flex-direction: column;
     background: var(--neutral-dark-blue);
     width: 400px;
     border-radius: 20px;
+    padding: 30px;
 }
 
 .thankyou-container *,
@@ -52,9 +55,9 @@ p {
     margin-bottom: 20px;
 }
 
-.rating-prompt-container {
-    padding: 30px;
-}
+/* .rating-prompt-container {
+    display: none;
+} */
 
 .icon-container {
     background: var(--neutral-greyish-blue);
@@ -109,10 +112,33 @@ p {
 
 .thankyou-container {
     display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankyou-logo {
+    width: 50%;
+}
+
+.thankyou-message {
+    text-align: center;
+}
+
+.thankyou-header {
+    text-align: center;
+}
+
+.user-selection {
+    text-align: center;
+    color: var(--primary-orange);
+    background: var(--neutral-greyish-blue);
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 30px;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.7333rem;
   text-align: center;
 }
 .attribution a {
