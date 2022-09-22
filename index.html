@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page-container">
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+        <div class="rating-prompt-container">
+          <div class="icon-container">
+            <img src="images/icon-star.svg" alt="survey star">
+          </div>
+          <div class="rating-prompt-message">
+            <h2 class="rating-prompt-header">How did we do?</h2>
+            <p class="rating-prompt-message">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Daniel Stockham</a>.
-  </div>
-</body>
+            <ul class="rating-scale">
+              <li class="rating-selection">1</li>
+              <li class="rating-selection">2</li>
+              <li class="rating-selection">3</li>
+              <li class="rating-selection">4</li>
+              <li class="rating-selection">5</li>
+            </ul>
+  
+            <div class="rating-submit-btn">Submit</div>
+          </div>
+          <div class="thankyou-container">
+            <img
+              src="images/illustration-thank-you.svg"
+              alt="thank you for taking our survey!"
+              class="thankyou-logo"
+            />
+            <div class="user-selection">
+              You selected out <span id="selected-rating"></span> of 5
+            </div>
+  
+            <h2 class="thankyou-header">Thank you!</h2>
+  
+            <p class="thankyou-message">
+              We appreciate you taking the time to give a rating. If you ever need
+              more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Daniel Stockham</a>.
+      </footer>
+    </div>
+  </body>
 </html>

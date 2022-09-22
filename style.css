@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  color: var(--neutral-light-gray);
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-gray: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-greyish-blue: hsl(214, 13%, 24%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-dark-dark-blue: hsl(216, 12%, 8%);
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--neutral-white);
+}
+
+p {
+    line-height: 26px;
+}
+
+.page-wrapper {
+    background: var(--neutral-dark-dark-blue);
+    height: 100vh;
+    width: 100%;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.thankyou-container,
+.rating-prompt-container {
+    background: var(--neutral-dark-blue);
+    width: 400px;
+    border-radius: 20px;
+}
+
+.thankyou-container *,
+.rating-prompt-container * {
+    margin-bottom: 20px;
+}
+
+.rating-prompt-container {
+    padding: 30px;
+}
+
+.icon-container {
+    background: var(--neutral-greyish-blue);
+    padding: 10px;
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+}
+
+.rating-scale {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.rating-scale li {
+    background: var(--neutral-greyish-blue);
+    border-radius: 100%;
+    list-style-type: none;
+    padding: 14px 20px 13px 20px; 
+    cursor: pointer;
+}
+
+.rating-scale li:hover {
+    background: var(--neutral-light-gray);
+    color: var(--neutral-white);
+}
+
+.rating-scale li:active {
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+}
+
+.rating-submit-btn {
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.rating-submit-btn:hover,
+.rating-submit-btn:active {
+    background: var(--neutral-white);
+    color: var(--primary-orange);
+}
+
+.thankyou-container {
+    display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
