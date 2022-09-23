@@ -4,11 +4,11 @@ let selectedValue = null;
 const updateRatingSelection = (element) => {
     const previousSelectedRating = document.getElementsByClassName('selected-rating');
 
-    if(previousSelectedRating.length) {
+    if (previousSelectedRating.length) {
         previousSelectedRating[0].className = previousSelectedRating[0].className.replace(' selected-rating', '');
-    
+
     }
-    
+
     element.className += ' selected-rating';
 }
 
@@ -29,23 +29,23 @@ const initialization = () => {
 
     });
 
-    for(let i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         const ratingElem = document.createElement("li");
         const ratingValue = i + 1;
-    
+
         ratingElem.className = 'rating-selection';
         ratingElem.dataset.ratingValue = ratingValue;
         ratingElem.addEventListener('click', (e) => {
             const target = e.target;
             const value = e.target.dataset?.ratingValue;
-    
+
             selectedValue = value;
-    
+
             updateRatingSelection(target);
         });
-    
+
         ratingElem.innerHTML = ratingValue;
-    
+
         scaleElem.appendChild(ratingElem);
     }
 };
