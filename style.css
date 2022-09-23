@@ -92,6 +92,15 @@ p {
     color: var(--neutral-white);
 }
 
+.selected-rating {
+    background: var(--primary-orange) !important;
+    color: var(--neutral-white);
+}
+
+.selected-rating-value {
+    color: var(--primary-orange);
+}
+
 .rating-submit-btn {
     background: var(--primary-orange);
     color: var(--neutral-white);
